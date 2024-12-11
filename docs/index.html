@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slamonia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Slamonia</h1>
+
+    <!-- Login / Sign-up Section -->
+    <div id="userArea">
+      <h2>Login or Sign Up</h2>
+      <input type="text" id="username" placeholder="Enter your username">
+      <input type="password" id="password" placeholder="Enter your password">
+      <button id="loginButton">Login</button>
+      <button id="signupButton">Sign Up</button>
+    </div>
+
+    <!-- Post Area (Visible After Login) -->
+    <div id="postArea" style="display: none;">
+      <div class="post-form">
+        <input type="file" id="fileInput" accept="image/*, video/*">
+        <textarea id="postText" placeholder="What's on your mind?"></textarea>
+        <button id="postButton">Post</button>
+      </div>
+
+      <h2>Your Dashboard</h2>
+      <p><strong>Subscriptions:</strong> <span id="subscriptionCount">0</span></p>
+      <p><strong>Your Posts:</strong></p>
+      <div id="yourPosts"></div>
+
+      <h2>All Posts</h2>
+      <div id="postsContainer"></div>
+    </div>
+
+    <!-- Subscribed Posts Section -->
+    <div id="subscribedPosts">
+      <h2>Your Subscribed Posts</h2>
+      <div id="subscribedPostsContainer"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
